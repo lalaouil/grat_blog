@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>GratBlog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -10,17 +11,28 @@
 <header>
   <div class="left-nav">
     <ul>
-      <li><%= link_to "Home", stories_path %></li>
+      <li><%= link_to "GratGrows", stories_path %></li>
     </ul>
   </div>
   <div class="right-nav">
-    <ul>
+    <ul class="nav navbar-nav">
       <li><%= link_to "Add Story", new_story_path %></li>
+      <li><%= link_to "Map", stories_path %></li>
+      <li><%= link_to "Sign In", new_story_path %></li>
+      <li><%= link_to "Contact us", new_story_path %></li>
     </ul>
   </div>
   <div class="clearfix"></div>
 </header>
 <%= yield %>
-
+<div id="user_nav">
+  <% if current_user %>
+    Signed in as <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  <% end %>
+</div>
+</div>
 </body>
 </html>
