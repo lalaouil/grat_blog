@@ -1,15 +1,15 @@
 class StoriesController < ApplicationController
 
   def index
-    @stories = Story.all
+    @stories= Story.all
   end
 
   def new
-    @story =Story.new
+    @story = Story.new
   end
 
   def create
-    Story.create(story_params)
+   Story.create(story_params)
     redirect_to stories_path
   end
 

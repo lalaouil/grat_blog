@@ -1,5 +1,5 @@
 header {
-  background: grey;
+  background: white;
   padding: 10px;
   ul {
     margin: 0;
@@ -9,14 +9,16 @@ header {
   a {
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: slategray;
   }
 }
 
 .left-nav {
   float: left;
+  font-size: xx-large;
 }
 
 .right-nav {
   float: right;
+  font-size: medium;
 }

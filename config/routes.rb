@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'markers/index'
+
   resources :stories
+
+  resources :markers, only: [:index, :create]
 
   root to: "sites#index"
   get "/stories", to: "stories#index"
