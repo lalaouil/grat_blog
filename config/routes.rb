@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :markers, only: [:index, :create]
 
-  root to: "sites#index"
+  root to: "sites#home"
   get "/stories", to: "stories#index"
 
   get "/signout", to: "sessions#destroy"

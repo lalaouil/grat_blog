@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Gratitude</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+ <style>
+    .jumbotron{
+      background-color: #C8F7C5;
+    }
+
+    .nav {
+
+    }
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Gratitude</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <!-- <form class="navbar-form navbar-right"> -->
+          <div class="right-nav">
+    <ul class="nav navbar-nav">
+      <!-- <li><%#= link_to "Add Story", new_story_path %></li> -->
+      <li><%= link_to "Map", stories_path %></li>
+      <!-- <li><%#= link_to "Sign In", new_story_path %></li> -->
+      <li><%= link_to "About Us", new_story_path %></li>
+    </ul>
+  </div>
+            <!-- <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </fo -->rm>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Gratitude</h1>
+        <p>The world isn't always a bad place! Good deeds are performed everyday. Share good deeds you've experienced. Go to the map, click on the marker button and then click on the location where you experienced a good deed. If you click on your new marker, a window will appear for you to write your story. You can then allow it to post onto your Facebook page.</p>
+        <p>Feeling down? Click on a marker and read other people's good deed stories. Use their stories for ideas of good deeds you can go out and perform for others.</p>
+        <p>Let's spread the love!</p>
+      
+      </div>
+    </div>
+    <div class="container" id="bottomContainer" >
+  <div class="row">
+    <div class="stepOne col-md-4 text-center">
+      <%= image_tag "signup.jpg", id: "tutorial", class: "img-circle", style: "height:250px; width:250px" %>
+    </div>
+    <div class="stepTwo col-md-4 text-center">
+      <%= image_tag "report.jpg", id: "tutorial", class: "img-circle", style: "height:250px; width:250px" %>
+    </div>
+    <div class="stepThree col-md-4 text-center">    
+      <%= image_tag "map.jpg", id: "tutorial", class: "img-circle", style: "height:250px; width:250px" %>
+    </div>
+  </div> <!-- row close -->
+</div> <!-- container close -->
+
+      <hr>
+
+      <footer>
+        <p></p>
+      </footer>
+    </div> <!-- /container -->
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   
+    
+  </body>
+</html>

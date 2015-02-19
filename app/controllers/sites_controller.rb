@@ -1,10 +1,10 @@
 class SitesController < ApplicationController
-  def index
+  def home
+  end
+
+  def map
   end
 
   def about
-  end
-
-  def contact
   end
 end

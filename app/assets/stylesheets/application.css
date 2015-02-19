@@ -12,4 +12,11 @@
  *
  *= require_tree .
  *= require_self
+
  */
+#marker {
+left: 148px;
+position: relative;
+top: -39px;
+color: #E26A6A;
+} 
