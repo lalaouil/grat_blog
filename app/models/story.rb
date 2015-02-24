@@ -20,7 +20,7 @@ class Story < ActiveRecord::Base
 def post_to_facebook
     if story.is_a?(User) && story.oauth_token.present?
         graph = Koala::Facebook::API.new(story.oauth_token)
-        graph.put_connections("me", "feed", message: "TODO: #{content}")
+        graph.put_connections("me", "feed", message: "Story: #{content}")
     end
 end
 end
