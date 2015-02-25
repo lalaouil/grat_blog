@@ -11,4 +11,6 @@
 /log/*
 !/log/.keep
 /tmp
-/.env
+.env
+heroku keys:add
+heroku keys:add.pub
