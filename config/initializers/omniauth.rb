@@ -1,4 +1,4 @@
-require 'omniauth-facebook'
+
 
 Rails.application.config.middleware.use OmniAuth::Builder do
   puts ENV['FACEBOOK_KEY']
